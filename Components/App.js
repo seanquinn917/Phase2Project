@@ -1,8 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
 import { useEffect, useState } from 'react';
-import BugCard from '../src/BugCard';
-import BugList from '../src/BugList';
+import BugCard from './BugCard';
+import BugList from './BugList';
 
 
 
