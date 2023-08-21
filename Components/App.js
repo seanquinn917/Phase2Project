@@ -11,7 +11,7 @@ import SubmitBug from './SubmitBug';
 
 function App() {
   const [bugs, setBugs]= useState([])
-console.log(bugs)
+
   
   return (
     <div className="App">
