@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-function SubmitBug(){
+function SubmitBug({handleNewBug}){
 const [formData, setFormData]=useState([])
 
 function handleChange(e ){
@@ -14,6 +14,20 @@ function handleChange(e ){
 
 function handleSubmit(e){
     e.preventDefault()
+    fetch("http://localhost:3030/Pollinators",{
+        method:"PUSH",
+        headers: {
+            "content-type" : "application/json"
+        },
+        body:JSON.stringify({
+            name: formData.name,
+            range: formData.range,
+            plants: formData.plants,
+            descript: formData.descript
+        })
+    }).then((r)=>r.json())
+      .then((newBug)=>handleNewBug(newBug))
+    
     console.log(formData)
 }
 
@@ -23,7 +37,7 @@ function handleSubmit(e){
         <div>this is where you will be able to submit your fav pollinator to the list!
                 <form onSubmit={handleSubmit}>
                     <label>name</label>
-                    <input type="text" name="name" onChange={handleChange}/>
+                    <input type="text" name="name" value={formData.name} onChange={handleChange}/>
                     <label>range</label>
                     <input type="text" name="range" onChange={handleChange}/>
                     <label>plants</label>

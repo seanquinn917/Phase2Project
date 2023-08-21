@@ -12,6 +12,11 @@ import SubmitBug from './SubmitBug';
 function App() {
   const [bugs, setBugs]= useState([])
 
+
+  function handleNewBug(newBug){
+    setBugs([...bugs, newBug])
+  }
+
   
   return (
     <div className="App">
@@ -24,7 +29,7 @@ function App() {
            <BugList bugs={bugs} setBugs={setBugs}/>
         </Route>
         <Route path="/submitbug">
-          <SubmitBug />
+          <SubmitBug handleNewBug={handleNewBug}/>
         </Route>
       </Switch>
      
