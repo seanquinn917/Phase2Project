@@ -5,7 +5,7 @@ import NavBar from './NavBar';
 import { Switch, Route} from "react-router-dom"
 import Home from './Home';
 import SubmitBug from './SubmitBug';
-import BugDetail from './BugDetails';
+import BugDetails from './BugDetails';
 
 
 
@@ -23,13 +23,13 @@ function App() {
     <div className="App">
       <NavBar />
       <Switch>
-        <Route path="/home">
+        <Route  path="/home">
           <Home />
         </Route>
-        <Route  exact path="/bugs">
-           <BugList bugs={bugs} setBugs={setBugs}/>
-        </Route>
         <Route path="/bugs/:id">
+           <BugDetails />
+        </Route>
+        <Route exact path="/bugs">
            <BugList bugs={bugs} setBugs={setBugs}/>
         </Route>
         <Route path="/submitbug">
