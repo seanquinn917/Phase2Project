@@ -16,7 +16,11 @@ function BugList({bugs, setBugs}){
     
 
     return(
-        <div>{displayBugs}</div>
+        <div>
+          <span>
+          {displayBugs}
+          </span>
+        </div>
     )
 }
 

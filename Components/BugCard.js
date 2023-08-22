@@ -8,10 +8,11 @@ const {id, name, range, image, plants, descript}= props
 
     return(
         <div>
-            <span></span>
+            <span>
             <h2>{name}</h2>
             <img src={image} alt="oops"></img>
             <Link to={`/bugs/${id}`}>More Details</Link>
+            </span>
         </div>
     )
 }

@@ -17,13 +17,13 @@ console.log(bugDetail)
 const {name, range, image, attractiveplants, description }= bugDetail
 
     return(
-        <section>
+        <span>
             <div className="bug-details">
                 <h1>{name}</h1>
-                <p>{range} {attractiveplants} {description}</p>
                 <img src={image} alt="oops"></img>
+                <p>{range} {attractiveplants} {description}</p>
             </div>
-        </section>
+        </span>
     )
 }
 
