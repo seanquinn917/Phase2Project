@@ -8,7 +8,7 @@ function NavBar(){
             <h1>
             <ul className="topnav">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/Buglist">Bugs!</Link></li>
+            <li><Link to="/Bugs">Bugs!</Link></li>
             <li><Link to="/SubmitBug">Add your favorite Bug!</Link></li>
             </ul>   
             </h1>

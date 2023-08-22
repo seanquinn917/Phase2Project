@@ -26,7 +26,7 @@ function App() {
         <Route path="/home">
           <Home />
         </Route>
-        <Route path="/buglist">
+        <Route path="/bugs">
            <BugList bugs={bugs} setBugs={setBugs}/>
         </Route>
         <Route path="/submitbug">
