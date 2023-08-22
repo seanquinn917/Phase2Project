@@ -23,7 +23,8 @@ function handleSubmit(e){
             name: formData.name,
             range: formData.range,
             plants: formData.plants,
-            descript: formData.descript
+            descript: formData.descript,
+            image: formData.image
         })
     }).then((r)=>r.json())
       .then((newBug)=>handleNewBug(newBug))
@@ -36,15 +37,19 @@ function handleSubmit(e){
     return(
         <div>this is where you will be able to submit your fav pollinator to the list!
                 <form onSubmit={handleSubmit}>
-                    <label>name</label>
+                    <ul className="form">
+                    <label>  Name  </label>
                     <input type="text" name="name"  onChange={handleChange}/>
-                    <label>range</label>
+                    <label>  Range  </label>
                     <input type="text" name="range" onChange={handleChange}/>
-                    <label>plants</label>
+                    <label>  Plants  </label>
                     <input type="text" name="plants" onChange={handleChange}/>
-                    <label>description</label>
+                    <label>  Description  </label>
                     <input type="text" name="descript" onChange={handleChange}/>
+                    <label>  ImageURL  </label>
+                    <input type="text" name="image"  onChange={handleChange}/>
                     <input type="submit" value="submit" />
+                    </ul>
                 </form>
 
 
