@@ -35,7 +35,9 @@ function handleSubmit(e){
 
 
     return(
-        <div>this is where you will be able to submit your fav pollinator to the list!
+        <div>           
+            <span></span>  
+            <span></span>                                                                                                   
                 <form onSubmit={handleSubmit}>
                     <ul className="form">
                     <label>  Name  </label>

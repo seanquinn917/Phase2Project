@@ -10,7 +10,7 @@ const {name, range, image, plants, descript}= props
         <div>
             <span></span>
             <h2>{name}</h2>
-            <p>{range}, {plants}, {descript}</p>
+            {/* <p>{range}, {plants}, {descript}</p> */}
             <img src={image} alt="oops"></img>
         </div>
     )

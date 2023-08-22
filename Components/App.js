@@ -5,6 +5,7 @@ import NavBar from './NavBar';
 import { Switch, Route} from "react-router-dom"
 import Home from './Home';
 import SubmitBug from './SubmitBug';
+import BugDetail from './BugDetails';
 
 
 
