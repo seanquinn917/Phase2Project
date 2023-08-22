@@ -11,7 +11,7 @@ function BugList({bugs, setBugs}){
       )
     
       const displayBugs = bugs.map((bug)=>{
-        return <BugCard key={bug.id} name={bug.name} range={bug.range} image={bug.image} plants={bug.attractiveplants} descript={bug.description}/>
+        return <BugCard id={bug.id} key={bug.id} name={bug.name} range={bug.range} image={bug.image} plants={bug.attractiveplants} descript={bug.description}/>
       })
     
 
