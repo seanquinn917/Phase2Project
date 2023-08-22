@@ -29,6 +29,9 @@ function App() {
         <Route path="/bugs">
            <BugList bugs={bugs} setBugs={setBugs}/>
         </Route>
+        <Route exact path="/bugs/:id">
+           <BugList bugs={bugs} setBugs={setBugs}/>
+        </Route>
         <Route path="/submitbug">
           <SubmitBug handleNewBug={handleNewBug}/>
         </Route>

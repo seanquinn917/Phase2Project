@@ -9,10 +9,10 @@ const id = 1
 useEffect(()=>{
     fetch(`/bugs/${id}`)
     .then((r)=>r.json())
-    .then(data=> setBug(data))
+    .then(data=> setBugDetail(data))
 }, [id])
 
-const {name, range, image, plants, descript }= bug
+const {name, range, image, plants, descript }= bugDetail
 
     return(
         <div className="bug-details">
