@@ -7,10 +7,12 @@ function NavBar(){
         <div className=".topnav">
             <h1>
             <span>
-            <Link to="/">Home</Link>
-            <Link to="/Buglist">Bugs!</Link>
-            <Link to="/SubmitBug">Add your favorite Bug!</Link>
-            </span>            
+            <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/Buglist">Bugs!</Link></li>
+            <li><Link to="/SubmitBug">Add your favorite Bug!</Link></li>
+            </ul>   
+            </span>    
             </h1>
         </div>
     )
