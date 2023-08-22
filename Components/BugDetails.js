@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 function BugDetail(){
 
-const [bug, setBug]=useState(null)
+const [bugDetail, setBugDetail]=useState(null)
 const id = 1
 
 useEffect(()=>{
