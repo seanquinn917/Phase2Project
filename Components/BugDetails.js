@@ -21,7 +21,11 @@ const {name, range, image, attractiveplants, description }= bugDetail
             <div className="bug-details">
                 <h1>{name}</h1>
                 <img src={image} alt="oops"></img>
-                <p>{range} {attractiveplants} {description}</p>
+                <ul className="bee-info">
+                    <li className="range">{range}</li>
+                    <li className="plants">{attractiveplants}</li>
+                    <li className="script">{description}</li>
+                </ul>
             </div>
         </span>
     )
