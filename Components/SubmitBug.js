@@ -42,9 +42,9 @@ function handleSubmit(e){
                     <ul className="form">
                     <label>  Name  </label>
                     <input type="text" name="name"  onChange={handleChange}/>
-                    <label>  Range  </label>
+                    <label> Native Range  </label>
                     <input type="text" name="range" onChange={handleChange}/>
-                    <label>  Plants  </label>
+                    <label>  Favorite Plants  </label>
                     <input type="text" name="plants" onChange={handleChange}/>
                     <label>  Description  </label>
                     <input type="text" name="descript" onChange={handleChange}/>
