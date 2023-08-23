@@ -9,7 +9,7 @@ function NavBar(){
             <ul className="topnav">
             <li><Link to="/home">Home</Link></li>
             <li><Link to="/Bugs">Pollinators</Link></li>
-            <li><Link to="/SubmitBug">What's your favorite?</Link></li>
+            <li><Link to="/SubmitBug">Add your favorite!</Link></li>
             </ul>   
             </h1>
             
