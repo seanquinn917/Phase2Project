@@ -22,9 +22,9 @@ const {name, range, image, attractiveplants, description }= bugDetail
                 <h1>{name}</h1>
                 <img src={image} alt="oops"></img>
                 <ul className="bee-info">
-                    <li className="range">{range}</li>
-                    <li className="plants">{attractiveplants}</li>
-                    <li className="script">{description}</li>
+                    <li className="range">Native Range: {range}</li>
+                    <li className="plants">Plants I love: {attractiveplants}</li>
+                    <li className="script">Interesting Facts: {description}</li>
                 </ul>
             </div>
         </span>
