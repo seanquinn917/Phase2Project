@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 
 function BugCard(props){
+const [showDetails, setShowDetails]=useState(false)
 
 const {id, name, range, image, plants, descript}= props
+
+function handleClick(){
+ setShowDetails((showDetails)=>!showDetails)
+ console.log('click')
+}
 
     return(
         <div>
