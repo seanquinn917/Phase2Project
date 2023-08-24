@@ -17,7 +17,7 @@ function App() {
 
   function handleNewBug(newBug){
     setBugs([...bugs, newBug])
-    setFormData("")
+   
   }
 
  
