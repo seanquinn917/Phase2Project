@@ -13,7 +13,7 @@ useEffect(() => {
         .then(r=>r.json())
         .then(data => setBugDetail(data))
 }, [params.id])
-console.log(bugDetail)
+
 const {name, range, image, attractiveplants, description }= bugDetail
 
     return(

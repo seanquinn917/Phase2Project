@@ -9,7 +9,7 @@ function NavBar(){
             <ul className="navBar">
             <li className="topnav"><Link to="/home">Home</Link></li>
             <li className="topnav"><Link to="/Bugs">Pollinators</Link></li>
-            <li className="topnav"><Link to="/SubmitBug">Add your favorite!</Link></li>
+            {/* <li className="topnav"><Link to="/SubmitBug">Add your favorite!</Link></li> */}
             </ul>   
         </h1>
             

@@ -18,6 +18,7 @@ function App() {
     setBugs([...bugs, newBug])
   }
 
+ 
   
   return (
     <div className="App">
