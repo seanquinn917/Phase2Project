@@ -22,8 +22,8 @@ function handleSubmit(e){
         body:JSON.stringify({
             name: formData.name,
             range: formData.range,
-            plants: formData.plants,
-            descript: formData.descript,
+            attractiveplants: formData.plants,
+            description: formData.descript,
             image: formData.image
         })
     }).then((r)=>r.json())
