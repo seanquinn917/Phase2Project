@@ -28,8 +28,6 @@ function handleSubmit(e){
         })
     }).then((r)=>r.json())
       .then((newBug)=>handleNewBug(newBug))
-    
-    console.log(formData)
 }
 
 
