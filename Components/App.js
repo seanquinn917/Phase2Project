@@ -12,10 +12,12 @@ import BugDetails from './BugDetails';
 
 function App() {
   const [bugs, setBugs]= useState([])
+  const [formData, setFormData]=useState([])
 
 
   function handleNewBug(newBug){
     setBugs([...bugs, newBug])
+    setFormData("")
   }
 
  
@@ -24,14 +26,14 @@ function App() {
     <div className="App">
       <NavBar />
       <Switch>
-        <Route  path="/home">
+        <Route exact path="/home">
           <Home />
         </Route>
         <Route path="/bugs/:id">
            <BugDetails />
         </Route>
         <Route exact path="/bugs">
-           <BugList bugs={bugs} setBugs={setBugs}/>
+           <BugList formData={formData} setFormData={setFormData} handleNewBug={handleNewBug} bugs={bugs} setBugs={setBugs}/>
         </Route>
         <Route path="/submitbug">
           <SubmitBug handleNewBug={handleNewBug}/>

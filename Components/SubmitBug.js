@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 
-function SubmitBug({handleNewBug}){
-const [formData, setFormData]=useState([])
+function SubmitBug({handleNewBug, formData, setFormData}){
+
 
 function handleChange(e ){
     e.preventDefault()
