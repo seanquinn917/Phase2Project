@@ -7,10 +7,6 @@ const [showDetails, setShowDetails]=useState(false)
 
 const {id, name, range, image, plants, descript, bugs, setBugs}= props
 
-function handleClick(){
- setShowDetails((showDetails)=>!showDetails)
- console.log('click')
-}
 
 
 function handleDelete(){
@@ -33,7 +29,7 @@ function handleDelete(){
             <h2>{name}</h2>
             <img src={image} alt="oops"></img>
             <Link to={`/bugs/${id}`}>More Details</Link>
-            <h3><button onClick={handleDelete}>Delete this Bug!</button></h3>
+            <h3><button onClick={handleDelete}>Delete this Bug</button></h3>
             </span>
         </div>
     )
