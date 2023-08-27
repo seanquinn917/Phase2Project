@@ -14,6 +14,7 @@ function handleChange(e ){
 
 function handleSubmit(e){
     e.preventDefault()
+  
     fetch("http://localhost:3030/Pollinators",{
         method:"POST",
         headers: {
@@ -28,6 +29,13 @@ function handleSubmit(e){
         })
     }).then((r)=>r.json())
       .then((newBug)=>handleNewBug(newBug))
+      setFormData({
+        name: "",
+        range: "",
+        plants:"",
+        descript: "",
+        image: ""
+      })
 }
 
 
@@ -39,15 +47,15 @@ function handleSubmit(e){
                 <form onSubmit={handleSubmit}>
                     <ul className="form">
                     <label>  Name  </label>
-                    <input type="text" name="name"  onChange={handleChange}/>
+                    <input type="text" name="name" value={formData.name} onChange={handleChange}/>
                     <label> Native Range  </label>
-                    <input type="text" name="range" onChange={handleChange}/>
+                    <input type="text" name="range" value={formData.range}  onChange={handleChange}/>
                     <label>  Favorite Plants  </label>
-                    <input type="text" name="plants" onChange={handleChange}/>
+                    <input type="text" name="plants" value={formData.plants}  onChange={handleChange}/>
                     <label>  Description  </label>
-                    <input type="text" name="descript" onChange={handleChange}/>
+                    <input type="text" name="descript" value={formData.descript}   onChange={handleChange}/>
                     <label>  ImageURL  </label>
-                    <input type="text" name="image"  onChange={handleChange}/>
+                    <input type="text" name="image" value={formData.image}   onChange={handleChange}/>
                     <input type="submit" value="submit" />
                     </ul>
                 </form>

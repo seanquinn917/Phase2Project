@@ -12,12 +12,12 @@ import BugDetails from './BugDetails';
 
 function App() {
   const [bugs, setBugs]= useState([])
-  const [formData, setFormData]=useState([])
+  const [formData, setFormData]=useState({})
 
 
   function handleNewBug(newBug){
     setBugs([...bugs, newBug])
-   
+  
   }
 
  
